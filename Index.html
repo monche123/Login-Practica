@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login</title>
+    
+</head>
+<body>
+    
+<div class="wrap">
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>Logo .</p>
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="#" class="link active">Home</a></li>
+                <li><a href="#" class="link">Blog</a></li>
+                <li><a href="#" class="link">Services</a></li>
+                <li><a href="#" class="link">About</a></li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn white-btn" id="loging-btn" onclick="login()">Log in</button>
+            <button class="btn" id="register-btn" onclick="register()">Sign Up</button>
+        </div>
+        <div class="nav-menubtn">
+            <i class="bx bx-menu" onclick="menufuction()"></i>
+        </div>
+    </nav>
+
+    <!------------------------------------FORM BOX-------------------------------------------->
+    <div class="formbox">
+        <!----------------------  LOGIN  -------------------------------->
+        <div class="login-cont" id="login">
+            <div class="top">
+                <span>Don't have an account? <a href="# " onclick="register()">Sing Up</a></span>
+                <header>Login</header>
+            </div>
+
+            <div class="input-box">
+                <input type="text" class="Input-field" placeholder="User name or email">
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="Input-field" placeholder="Pass">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Sing in">
+                
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="login-check">
+                    <label for="login-check">Remember me</label>
+                </div>
+                <div class="two">
+                    <label> <a href="#">Forgot password?</a></label>
+                </div>
+            </div>
+        </div>
+        <!----------------------  REGISTER  -------------------------------->
+        <div class="register-cont" id="register">
+            <div class="top">
+                <span>Have an account? <a href="# " onclick="login()">Login</a></span>
+                <header>Sign up</header>
+            </div>
+            <div class="two-form">
+                <div class="input-box">
+                    <input type="text" class="Input-field" placeholder="First-name">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="Input-field" placeholder="Last-name">
+                    <i class="bx bx-user"></i>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <input type="text" class="Input-field" placeholder="Email">
+                <i class="bx bx-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="Input-field" placeholder="Pass">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Register">
+                
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="Register-check">
+                    <label for="Register-check">Remember me</label>
+                </div>
+                <div class="two">
+                    <label> <a href="#">Terms and Coditions</a></label>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<script src="Funciones.js"></script>
+</body>
+</html>
